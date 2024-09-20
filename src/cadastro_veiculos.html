@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cadastro de veículos</title>
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/cadastro_veiculo.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="main">
+      <header class="cabecalho">
+        <h1>Cadastro de veículos</h1>
+      </header>
+      <section class="sessao_forumlario">
+        <form action="post" class="formulario">
+          <div class="formulario div__formulario">
+            <label for="formulario__veiculos_nome" class="label_form">
+              Nome:
+            </label>
+            <input
+              type="text"
+              id="formulario__veiculos_nome"
+              name="formulario__veiculos_nome"
+              required
+              autocomplete="off"
+              class="input_formulario"
+            />
+          </div>
+          <div class="formulario div__formulario">
+            <label for="formulario__veiculos_marca" class="label_form">
+              <span>Marca: </span>
+            </label>
+            <input
+              type="text"
+              name="formulario__veiculos_marca"
+              id="formulario__veiculos_marca"
+              required
+              autocomplete="off"
+              class="input_formulario"
+            />
+          </div>
+
+          <div class="formulario div__formulario">
+            <label for="formulario__veiculos_modelo" class="label_form">
+              <span>Modelo: </span>
+            </label>
+            <input
+              type="text"
+              id="formulario__veiculos_modelo"
+              name="formulario__veiculos_modelo"
+              required
+              autocomplete="off"
+              class="input_formulario"
+            />
+          </div>
+
+          <div class="formulario div__formulario">
+            <label for="formulario__veiculos_ano-fabricacao" class="label_form">
+              <span>Ano de fabricação: </span>
+            </label>
+            <input
+              type="text"
+              name="formulario__veiculos_ano-fabricacao"
+              id="formulario__veiculos_ano-fabricacao"
+              required
+              autocomplete="off"
+              class="input_formulario"
+            />
+          </div>
+
+          <div class="formulario div__formulario">
+            <label for="formulario__veiculos_placa" class="label_form">
+              Placa do veículo:
+            </label>
+            <input
+              type="text"
+              name="formulario__veiculos_placa"
+              id="formulario__veiculos_placa"
+              required
+              autocomplete="off"
+              class="input_formulario"
+            />
+          </div>
+
+          <div class="formulario div__formulario">
+            <label for="formulario__veiculos_cor">Cor:</label>
+            <select name="cor">
+              <option value="cor_preto">Preto</option>
+              <option value="cor_branco">Branco</option>
+              <option value="cor_cinza">Cinza</option>
+              <option value="cor_prata">Prata</option>
+              <option value="cor_vermelho">Vermelho</option>
+              <option value="cor_black-shark">Black shark</option>
+            </select>
+          </div>
+
+          <div class="formulario div__formulario">
+            <input type="submit" value="Enviar" />
+            <input type="reset" value="Resetar" />
+          </div>
+        </form>
+      </section>
+    </div>
+  </body>
+</html>

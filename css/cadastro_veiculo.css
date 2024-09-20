@@ -1,0 +1,50 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  background-color: #262626;
+  color: #262626;
+  height: 100vh;
+}
+
+.main {
+  width: 50%;
+  height: 90vh;
+  padding: 20px;
+  background-color: #f2f2f2;
+  border-radius: 15px;
+}
+
+.cabecalho {
+  font-weight: 800;
+  font-size: 2.3em;
+  text-align: center;
+}
+
+form {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  margin-top: 1.5em;
+}
+
+.input_formulario {
+  color: #fff;
+  font-size: 28px;
+  width: 100%;
+  padding: 20px 5px 5px;
+  background-color: #ffffff;
+  border: none;
+  border-radius: 4px;
+}
+
+.div__formulario {
+  margin-top: 15px;
+}
+
+.label_form {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
