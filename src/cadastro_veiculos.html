@@ -14,7 +14,7 @@
     />
   </head>
   <body>
-    <div class="main">
+    <div class="container">
       <header class="cabecalho">
         <h1>Cadastro de veículos</h1>
       </header>
@@ -89,9 +89,9 @@
             />
           </div>
 
-          <div class="formulario div__formulario">
-            <label for="formulario__veiculos_cor">Cor:</label>
-            <select name="cor">
+          <div class="formulario div__formulario opcao_formulario">
+            <label for="formulario__veiculos_cor" class="label_form">Cor:</label>
+            <select name="cor" class="">
               <option value="cor_preto">Preto</option>
               <option value="cor_branco">Branco</option>
               <option value="cor_cinza">Cinza</option>
@@ -101,9 +101,9 @@
             </select>
           </div>
 
-          <div class="formulario div__formulario">
-            <input type="submit" value="Enviar" />
-            <input type="reset" value="Resetar" />
+          <div class="botao_formulario formulario div__formulario">
+            <button type="submit" class="botao botao_enviar"><a href="#">Enviar</a></button>
+            <button type="reset" class="botao botao_resetar"><a href="#">Resetar</a></button>
           </div>
         </form>
       </section>
