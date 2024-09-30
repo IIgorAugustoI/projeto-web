@@ -1,23 +1,57 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cadastro</title>
-    <link rel="stylesheet" href="/css/styles.css" />
-  </head>
-  <body>
-    <div class="area">
-      <h1>Cadastro</h1>
-      <form action="pagina1web.html" method="get">
-        <label for="nome">Nome:</label>
-        <input type="text" id="nome" name="nome" required />
 
-        <label for="senha">Senha:</label>
-        <input type="password" id="senha" name="senha" required />
+ <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login</title>
+  <link rel="stylesheet" href="../projeto-web-main/css/login_cadastro-site.css" />
+ </head>
 
-        <button type="submit">Cadastrar</button>
-      </form>
-    </div>
+ <body>
+   <a class="links" id="paralogin"></a>
+
+    <form id="login" methood="get" action="../projeto-web-main/src/locadora_veiculos.html">
+
+       <div id="imagem"><img src="" ></div> 
+
+
+       <h1>Login</h1>
+ 
+       <div class="linha">
+         
+         <div class="inputBox">
+           <input type="text" required>
+           <div class="linha-caixa"></div>
+           <label for="">Name</label>  
+         </div>
+           
+       </div>
+
+       <div class="linha">
+         
+         <div class="inputBox">
+           <input type="password" required>
+           <div class="linha-caixa"></div>
+           <label for="">Password</label>
+         </div>
+         
+       </div>
+
+       <div id="check-box">
+         <input type="checkbox" id="manter-conect" name="manter-conect" value="">
+         <label for="manter-conect">   manter-se conectado</label><br>
+       </div>
+
+       <div class="butão">
+         <input type="submit" value="login">
+       </div>
+
+       <div id="abaixo-form">
+         <a href="../projeto-web-main/src/cadastro_conta.html">ainda não tem cadastro?</a>
+       </div>
+
+     </form>
   </body>
+
 </html>
