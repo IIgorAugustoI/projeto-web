@@ -1,0 +1,222 @@
+*{
+  margin:0;
+}
+html, body{ height: 100%;}
+
+body{
+  height: 100%;
+  display: flex; 
+  align-items: center; 
+  justify-content: center;
+  background-color: #83838349;
+  flex-direction: column;
+  box-sizing: border-box;
+  background-color: #3498db;
+  box-shadow: #140909;
+
+}
+
+
+.butão input{
+  width: 200px;
+  height: 35px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+}
+.butão{
+  padding: 20px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+
+  background-color: transparent;
+}
+
+#cadastro .butão{
+  padding:30px 0 ;
+}
+
+.butão input:hover {
+  background-color: #05849b;
+}
+
+
+a{
+  text-decoration: none;
+}
+
+h1{
+
+  padding:15px 0px;
+  width: 150px;
+  text-align: center;
+  color: #007BFF;
+}
+h1:after{
+  content: ' ';
+  display: block;
+  width: 100%;
+  height: 2px;
+  margin-top: 5px;
+  background: -webkit-linear-gradient(left, rgba(147,184,189,0) 0%,rgba(147,184,189,0.8) 20%,rgba(147,184,189,1) 53%,rgba(147,184,189,0.8) 79%,rgba(147,184,189,0) 100%); 
+  background: linear-gradient(left, rgba(147,184,189,0) 0%,rgba(147,184,189,0.8) 20%,rgba(147,184,189,1) 53%,rgba(147,184,189,0.8) 79%,rgba(147,184,189,0) 100%); 
+}
+/*organização do form*/
+
+#cadastro,
+#login {
+  box-sizing:content-box;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  background-color:white;
+  padding:10px;
+  margin-top: 5%;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+
+}
+
+form #imagem{
+  display: flex;
+  justify-content: left;
+  width: 100%;
+  align-items: flex-end;
+  border-radius: 50%;
+}
+
+form img {
+  height: 50px;
+  width: 50px;
+}
+
+form .linha{
+  padding-top: 20px;
+  width: 300px;
+}
+
+form .linha .inputBox{
+  width: 100%;
+  height: 40px;
+  position: relative;
+
+}
+form .linha textarea{
+  height: 70px;
+
+}
+
+form #check-box{
+  box-sizing: border-box;
+  padding:17px 15px;
+  display: flex;
+  width:  100%;
+  justify-content: left;
+  align-items: baseline;
+  font-size: 14px;
+  color:#acaaaa ;
+}
+
+form #check-box input{
+  background-color: transparent;
+}
+
+.inputBox input,
+.textarea textarea{
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: none;
+  font-size: 17px;
+
+}
+
+/*tirar selector*/
+textarea:focus, input:focus, select:focus {
+  box-shadow: 0 0 0 0;
+  border: 0 none;
+  outline: 0;
+
+}
+
+/*estilização do text-area*/
+.textarea textarea{
+  resize: none;
+  padding-top: 10px;
+
+}
+
+.inputBox input{
+  background-color: transparent;
+}
+.inputBox label{
+  position: absolute;
+  pointer-events: none;
+  bottom: 10px;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  color: #818080;
+}
+.textarea label{
+  width: 100%;
+  bottom: 40px;
+}
+
+/*mexer na linha do input*/
+
+.inputBox .linha-caixa{
+  position: absolute;
+  bottom: 0;
+  height: 2px;
+  width: 100%;
+  background-color: #c9c9c9;
+
+}
+.inputBox .linha-caixa:before{
+  position: absolute;
+  content: "";
+  height: 2px;
+  width: 100%;
+  background-color: #3498db;
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 0.3s ease;
+}
+
+/*"animação" do label*/
+.inputBox input:focus ~ .linha-caixa:before,
+.inputBox input:valid ~ .linha-caixa:before,
+.textarea textarea:focus ~ .linha-caixa:before,
+.textarea textarea:valid ~ .linha-caixa:before{
+  transform: scale(1);
+}
+
+.inputBox input:focus ~ label, textarea:focus ~ label,
+.inputBox input:valid ~ label, textarea:valid ~ label{
+  transform: translateY(-22px);
+  font-size: 12px;
+  color: #3498db;
+
+}
+
+
+/*link final da pagina*/
+#abaixo-form{
+  height: 50px;
+  width: 340px;
+  background-color: transparent;
+  padding: 10px 20px;
+
+  background-color: transparent;
+
+  box-sizing: border-box;
+  text-align: left;
+
+
+}
