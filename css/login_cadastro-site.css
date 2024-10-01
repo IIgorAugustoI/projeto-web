@@ -83,18 +83,7 @@ h1:after{
 
 }
 
-form #imagem{
-  display: flex;
-  justify-content: left;
-  width: 100%;
-  align-items: flex-end;
-  border-radius: 50%;
-}
 
-form img {
-  height: 50px;
-  width: 50px;
-}
 
 form .linha{
   padding-top: 20px;
